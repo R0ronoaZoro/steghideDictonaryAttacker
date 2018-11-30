@@ -33,6 +33,8 @@ def steghideuse(filepath, image):
 					sys.stdout.write(ncolr+ "\n[*] Password is : " + colr + pwd + ncolr)
 					print("\n[*] Image is successfully extracted!")
 					quit()
+				else:
+					print("[*] Password Not found! Try different wordlist.")
 				line = fp.readline()
 	except Exception as e:
 		print("[*] File not found!")
